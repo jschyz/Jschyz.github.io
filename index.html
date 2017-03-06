@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
 <title>游侠客5周年</title>
 <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="css/screen.css">
+<link rel="stylesheet" href="https://raw.githubusercontent.com/jschyz/lottery/master/css/screen.css">
 </head>
 <body>
 	<div id="wrapper">
-		<div id="loader"> 
+		<div id="loader">
 			<div class="inner"></div>
 		</div>
 		<!-- Awards panel -->
@@ -18,7 +18,7 @@
 				<i class="icon icon-filter"></i>
 			</div>
 			<div class="board">
-			
+
 				<div class="first">
 					<h1>一等奖</h1>
 					<fieldset>
@@ -29,7 +29,7 @@
 						<p>神秘西藏之旅（可任意选择一条2014全年游侠客西藏专题线路）</p>
 						<ul class="win">
 							<li>
-								<div class="avatar"><img width="34" src="img/blank.gif"/></div>
+								<div class="avatar"><img width="34" src="https://raw.githubusercontent.com/jschyz/lottery/master/img/blank.gif"/></div>
 								<div class="num">***********</div>
 								<div class="name"></div>
 								<button class="icon icon-delete" title="删除">删除</button>
@@ -38,7 +38,7 @@
 						<code>0/1</code>
 					</div>
 				</div>
-				
+
 				<div class="second">
 					<h1>二等奖</h1>
 					<fieldset>
@@ -49,7 +49,7 @@
 						<p>大美青海之旅（可任意选择一条2014全年游侠客青海湖-敦煌环线线路）</p>
 						<ul class="win">
 							<li class="none">
-								<div class="avatar"><img width="34" src="img/blank.gif"/></div>
+								<div class="avatar"><img width="34" src="https://raw.githubusercontent.com/jschyz/lottery/master/img/blank.gif"/></div>
 								<div class="num">***********</div>
 								<div class="name"></div>
 								<button class="icon icon-delete" title="删除">删除</button>
@@ -69,7 +69,7 @@
 						<p>坝上草原之旅（可任意选择一条2014全年游侠客坝上草原线路 ）</p>
 						<ul class="win">
 							<li class="none">
-								<div class="avatar"><img width="34" src="img/blank.gif"/></div>
+								<div class="avatar"><img width="34" src="https://raw.githubusercontent.com/jschyz/lottery/master/img/blank.gif"/></div>
 								<div class="num">***********</div>
 								<div class="name"></div>
 								<button class="icon icon-delete" title="删除">删除</button>
@@ -78,7 +78,7 @@
 						<code>0/3</code>
 					</div>
 				</div>
-				
+
 				<div class="grateful active">
 					<h1>感恩奖</h1>
 					<fieldset>
@@ -89,7 +89,7 @@
 						<p>华东单日游（可任意选择一条2014全年游侠客独家华东单日游线路 ）</p>
 						<ul class="win">
 							<li class="none">
-								<div class="avatar"><img width="34" src="img/blank.gif"/></div>
+								<div class="avatar"><img width="34" src="https://raw.githubusercontent.com/jschyz/lottery/master/img/blank.gif"/></div>
 								<div class="num">***********</div>
 								<div class="name"></div>
 								<button class="icon icon-delete" title="删除">删除</button>
@@ -101,10 +101,10 @@
 
 			</div>
 		</aside>
-		
+
 		<section id="container" class="clearfix">
 			<div class="html5_video">
-				<video autoplay loop src="video/cloud.mp4"></video>
+				<video autoplay loop src="https://raw.githubusercontent.com/jschyz/lottery/master/video/cloud.mp4"></video>
 			</div>
 
 			<div id="copyleft">
@@ -114,7 +114,7 @@
 
 			<section id="content" class="clearfix">
 				<div class="flicker">
-					<img src="img/truth.jpg" width="150"/>
+					<img src="https://raw.githubusercontent.com/jschyz/lottery/master/img/truth.jpg" width="150"/>
 				</div>
 				<div class="counter-container clearfix">
 					<div class="counter">
@@ -133,8 +133,8 @@
 		</section>
 	</div>
 
-	<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
-	<script type="text/javascript" src="js/dataSource.js"></script>
+	<script type="text/javascript" src="https://raw.githubusercontent.com/jschyz/lottery/master/js/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="https://raw.githubusercontent.com/jschyz/lottery/master/js/dataSource.js"></script>
 	<script type="text/javascript">
 	//除chrome外，其他支持需要在服务器上运行才支持
 	if(!window.localStorage){
@@ -212,7 +212,7 @@
 				if( !!locals ){
 					var nums = locals.split(','),
 						selector = $('.' + awards);
-					
+
 					for(var i = 0; i < nums.length; i++){
 						config.appear( selector, nums[i] )
 					}
@@ -250,7 +250,7 @@
 			}
 
 			setTimeout(function(){newItem.css({'margin-left': 0})}, 0)
-			
+
 			code.html( ratio.replace(/^\d+/, min + 1) );
 
 
@@ -268,7 +268,7 @@
 
 						none.find('.num').html('***********');
 						none.find('.avatar img').attr('src', 'img/blank.gif');
-						none.find('.name').html('');	
+						none.find('.name').html('');
 
 						none.prependTo( selector.find('.win') )
 					}
@@ -281,7 +281,7 @@
 
 	config['total'] = dataSource.length;
 
-	/* 
+	/*
      * 加载完毕后
 	 */
 	function loader() {
@@ -344,9 +344,9 @@
 						single.data( 'bingo',  Bingo( single ) );
 
 					}
-					
+
 					timers[ i ] = setTimeout(function(){
-						
+
 						single.data( 'bingo' ).start();
 
 					}, i * 150)
@@ -358,7 +358,7 @@
 			/*
 			 *抽奖
 			 /^13[0-9]{9}$|14[0-9]{9}|15[0-9]{9}$|18[0-9]{9}$/
-			 
+
 			 (new Date().getTime() * 9301 + 49297) % 233280 /233280.0 * Max
 
 			 ~~(Math.random() * max)
@@ -367,7 +367,7 @@
 
 		     ~~(Math.random()*(max-min+1))
 
-			 Math.round( Math.random() * 1000 + .5) 
+			 Math.round( Math.random() * 1000 + .5)
 		     Math.floor(Math.random() * 730) + 1
 
 			 //数组排序  [].sort(function () { return 0.5 - Math.random(); })
@@ -375,7 +375,7 @@
 			lottery: function() {
 				for( var x in timers ) {
 					try{
-						if( timers.length > ~~x + 1 ) { 
+						if( timers.length > ~~x + 1 ) {
 							clearTimeout( timers[ x ] )
 						}
 					}catch(e){
@@ -389,7 +389,7 @@
 				for(var i = 0; i < lucky.length; i++){
 					( i > 0 && i < 3 || i > 6 ) && value.push( lucky.charAt( i ) )
 				}
-				
+
 				$.each(args, function(i, n){
 					var single = $( n ),
 						bingo = single.data( 'bingo' );
@@ -501,13 +501,13 @@
 				if( arguments[2] != undefined && arguments[2] ) {
 					var to = code.indexOf( num ),
 						from = ( 10 * loop + running ) % 4;
-					
+
 					if( to >= from ) {
 						running += to - from;
 					} else {
 						running += 4 + to - from;
 					}
-					
+
 					format();
 				} else {
 					if( num < running ) {
@@ -515,7 +515,7 @@
 					}
 					running = num;
 				}
-				
+
 
 				arg.animate({
 					'background-position-y': -120 * ( 10 * loop + running  )
@@ -590,6 +590,3 @@
 	</script>
 </body>
 </html>
-
-
-
