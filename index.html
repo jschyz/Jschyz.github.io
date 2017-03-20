@@ -192,7 +192,10 @@
 		query: function( val ) {
 			for(var key in window.localStorage){
 				if( 'first|second|third|grateful'.indexOf(key) >= 0 ){
-					return config.get( key ).indexOf(val) >= 0
+					if (config.get( key ).indexOf(val) >= 0) {
+						return true;
+					}
+					continue;
 				}
 			}
 			return false
