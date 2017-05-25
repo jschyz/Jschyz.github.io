@@ -29,7 +29,7 @@ window.addEventListener('DOMContentLoaded', function() {
   function monitor(timestamp) {
     if (t) {
       // 打印帧数较卡
-      delay = Math.floor(timestamp - t)
+      delay = Math.floor(timestamp - t - 16.67)
       delay > 0 && console.log('渲染时间：' + timestamp, delay)
     }
     t = timestamp;
